@@ -1,23 +1,36 @@
-// Dynamic copyright year
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
 
-// Smooth tab transitions
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
+
 const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('section');
+const panels = document.querySelectorAll('.tab-panel');
+
+function showPanel(targetId) {
+    const targetPanel = document.getElementById(targetId);
+    const targetLink = document.querySelector(`.nav-link[href="#${targetId}"]`);
+
+    if (!targetPanel || !targetLink) {
+        return;
+    }
+
+    navLinks.forEach(link => link.classList.remove('active'));
+    panels.forEach(panel => panel.classList.remove('active'));
+
+    targetLink.classList.add('active');
+    targetPanel.classList.add('active');
+}
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        
-        // Remove active class from all links/sections
-        navLinks.forEach(l => l.classList.remove('active'));
-        sections.forEach(s => s.classList.remove('active'));
-        
-        // Add active class to clicked link
-        link.classList.add('active');
-        
-        // Show corresponding section
         const targetId = link.getAttribute('href').substring(1);
-        document.getElementById(targetId).classList.add('active');
+        showPanel(targetId);
+        window.history.pushState(null, '', `#${targetId}`);
     });
 });
+
+if (window.location.hash) {
+    showPanel(window.location.hash.substring(1));
+}

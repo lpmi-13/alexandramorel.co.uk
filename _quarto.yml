@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - CNAME
+    - favicon.ico
+    - favicon.svg
+    - favicon-96x96.png
+    - apple-touch-icon.png
+    - site.webmanifest
+    - web-app-manifest-192x192.png
+    - web-app-manifest-512x512.png
+    - script.js
+
+website:
+  title: "Academic Portfolio | Dr. [Your Name]"
+  site-url: "https://alexandramorel.co.uk"
+  favicon: favicon.svg
+  navbar: false
+  search: false
+
+format:
+  html:
+    theme: default
+    toc: false
+    anchor-sections: false
+    page-layout: custom
+    css: styles.css
+    include-in-header: includes/head.html
+    include-after-body: includes/after-body.html
+
+execute:
+  freeze: auto

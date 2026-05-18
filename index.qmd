@@ -1,0 +1,65 @@
+---
+pagetitle: "Academic Portfolio | Dr. [Your Name]"
+description: "Academic portfolio of Dr. [Your Name], specializing in [Your Field] at [Your University]."
+---
+
+::: {.cover}
+# Dr. [Your Name]
+:::
+
+<nav class="site-nav" aria-label="Section navigation">
+  <ul>
+    <li><a href="#about" class="nav-link active">About</a></li>
+    <li><a href="#publications" class="nav-link">Publications</a></li>
+    <li><a href="#teaching" class="nav-link">Teaching</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+::: {.container}
+::: {#about .tab-panel .active}
+## About
+
+Welcome to my academic portfolio. I am a researcher in [your field] at [your university].
+My work focuses on [brief research interest].
+:::
+
+::: {#publications .tab-panel}
+## Publications
+
+::: {.publication}
+### 2023
+
+**Title of Paper**  
+Author 1, Author 2, [Your Name]  
+*Journal Name*, 2023. [[PDF]](#) | [[DOI]](#)
+:::
+
+::: {.publication}
+### 2022
+
+**Another Paper Title**  
+[Your Name], Author 2  
+*Conference Name*, 2022. [[PDF]](#)
+:::
+:::
+
+::: {#teaching .tab-panel}
+## Teaching
+
+- **Course Name** (Spring 2024) - [University]
+- **Another Course** (Fall 2023) - [University]
+:::
+
+::: {#contact .tab-panel}
+## Contact
+
+Email: <a href="mailto:your.email@example.com">your.email@example.com</a>  
+Office: [Your Office Location]  
+Twitter: <a href="https://twitter.com/yourhandle">&#64;yourhandle</a>
+:::
+:::
+
+<footer>
+  &copy; <span id="year"></span> [Your Name]. All rights reserved.
+</footer>
