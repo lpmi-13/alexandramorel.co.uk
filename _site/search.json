@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Academic Portfolio | Dr. [Your Name]",
+    "section": "About",
+    "text": "About\nWelcome to my academic portfolio. I am a researcher in [your field] at [your university]. My work focuses on [brief research interest]."
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Academic Portfolio | Dr. [Your Name]",
+    "section": "Publications",
+    "text": "Publications\n\n2023\nTitle of Paper\nAuthor 1, Author 2, [Your Name]\nJournal Name, 2023. [PDF] | [DOI]\n\n\n2022\nAnother Paper Title\n[Your Name], Author 2\nConference Name, 2022. [PDF]"
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "Academic Portfolio | Dr. [Your Name]",
+    "section": "Teaching",
+    "text": "Teaching\n\nCourse Name (Spring 2024) - [University]\nAnother Course (Fall 2023) - [University]"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Academic Portfolio | Dr. [Your Name]",
+    "section": "Contact",
+    "text": "Contact\nEmail: your.email@example.com\nOffice: [Your Office Location]\nTwitter: @yourhandle"
+  }
+]
